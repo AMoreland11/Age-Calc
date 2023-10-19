@@ -11,9 +11,29 @@
     --off-black: hsl(0, 0%, 8%);
 }
 
+html{
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-grey);
+}
 
 body {
+    border: 0px solid;
+    width: 600px;
+    height: 550px;
+    border-radius: 0px 0px 100px 0px;
+    font-family: 'Poppins', sans-serif;
     font-size: 32px;
+    padding: 100px;
+    background-color: var(--White);
+    margin-top: 100px;
+}
+
+hr{
+    width: 500px;
+    margin-left: 1px;
+    margin-top: 25px;
+    bottom: 100px;
 }
 
 .attribution { 
@@ -22,4 +42,116 @@ body {
 
 .attribution a {
      color: hsl(228, 45%, 44%); 
+}
+
+
+/* Button */
+
+button{
+    background-color: var(--purple);
+    border-radius: 50%;
+    padding: 15px;
+    margin-left: 500px;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+    bottom: 55px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+
+/* Inputs */
+
+
+.input{
+    width: 120px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.input:hover{
+    cursor: pointer;
+    border-color: var(--purple);
+}
+
+.inputs{
+    display: flex;
+    gap: 20px;
+    color: var(--light-grey);
+}
+
+
+/* Heading & Span */
+
+.heading{
+    display: flex;
+    gap: 120px;
+    color: var(--off-black);
+    font-size: 15px;
+}
+
+span{
+    color: var(--purple);
+}
+
+
+/* Results & Errors */
+
+
+.result {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+.error {
+    height: 40px;
+    display: flex;
+    padding: 5px;
+    margin-right: 0px;
+    color: var(--light-red);
+    display: block;
+    font-size: 14px;
+    font-weight: 50;
+    font-style: italic;
+}
+
+
+
+@media (max-width: 400px) {
+    body{
+        width: 350px;
+        height: 400px;
+    }
+
+    img{
+        width: 23px;
+        height: 22px;
+    }
+    button{
+        display: flex;
+        margin: auto;
+    }
+    .input{
+        width: 70px;
+    }
+    .heading{
+        font-size: 10px;
+        gap: 80px;
+    }
+    .result{
+        font-size: 40px;
+        margin-top: 50px;
+    }
 }

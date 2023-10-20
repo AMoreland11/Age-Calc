@@ -5,7 +5,7 @@ const btn = document.getElementById("btn");
 
 // Store the initial colors of the input fields and headings
 const initialInputColors = [dates, months, years].map(inputField => getComputedStyle(inputField).borderColor);
-const initialHeadColors = [...document.querySelectorAll('.Head')].map(head => getComputedStyle(head).color);
+const initialHeadColors = [...document.querySelectorAll('.header')].map(head => getComputedStyle(head).color);
 
 btn.addEventListener('click', function () {
     const currentDate = new Date();
@@ -13,7 +13,7 @@ btn.addEventListener('click', function () {
     const month = months.value;
     const year = years.value;
     const errors = document.querySelectorAll('.error');
-    const heads = document.querySelectorAll(".Head");
+    const heads = document.querySelectorAll(".header");
 
     // Add a flag to determine if there are errors
     let hasErrors = false;
